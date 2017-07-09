@@ -3,10 +3,15 @@ project(C__Practice)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# Change this to the directory holding the Eigen Library
 SET( EIGEN3_INCLUDE_DIR "C:/Tools/C++ Libraries/Eigen3.3.4" )
+
+# Defensive Coding
 IF( NOT EIGEN3_INCLUDE_DIR )
     MESSAGE( FATAL_ERROR "Please point the environment variable EIGEN3_INCLUDE_DIR to the include directory of your Eigen3 installation.")
 ENDIF()
+
+# Including Eigen in my code
 INCLUDE_DIRECTORIES ( "${EIGEN3_INCLUDE_DIR}" )
 
 # find_package(OpenCV REQUIRED)
