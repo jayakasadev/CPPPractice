@@ -9,28 +9,13 @@
 #include "Eigen/Dense"
 #include <vector>
 
+// saving myself some trouble
 using namespace std;
 using namespace Eigen;
 
-// Kalman Filter Variables
-// object state
-VectorXd x;
-// object covariance matrix
-MatrixXd P;
-// external motion
-VectorXd u;
-// state transition matrix
-MatrixXd F;
-// measurement matrix
-MatrixXd H;
-// measurement covariance matrix
-MatrixXd R;
-// Identity matrix
-MatrixXd I;
-// process covariance matrix
-MatrixXd Q;
-
-vector<VectorXd> measurements;
 void filter(VectorXd &x, MatrixXd &P);
+void run();
+
+// using the eigen library because it has no dependencies and because it is highly efficient
 
 #endif //C_PRACTICE_KALMANFILTERUPDATE_H

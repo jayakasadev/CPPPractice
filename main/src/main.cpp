@@ -1,19 +1,7 @@
 #include "main.hpp"
-#include "objs/Student.hpp"
-
-float cubeVolume(float side){
-    return pow(side, 3);
-}
-
-float sphereVolume(float radius){
-    return (4 / 3.0) * M_PI * pow(radius, 3);
-}
-
-float coneVolume(float radius, float height){
-    return M_PI * pow(radius, 2) * (height / 3);
-}
 
 int main() {
+    /*
     cout << "Hello, World!" << endl;
 
     //Dimension of the cube
@@ -53,6 +41,13 @@ int main() {
     cout<<"\nFloats compared: "<<findSmaller(f1,f2);
     cout<<"\nChars compared: "<<findSmaller(c1,c2);
     cout<<"\nStrings compared: "<<findSmaller(s3, s2);
+     */
+
+
+    // VectorXd my_vector(2);
+    // my_vector << 10, 20;
+    // cout << my_vector << endl;
+    run();
 
     return 0;
 }
@@ -64,4 +59,16 @@ T findSmaller(T  input1,T  input2)
         return input1;
     else
         return input2;
+}
+
+float cubeVolume(float side){
+    return pow(side, 3);
+}
+
+float sphereVolume(float radius){
+    return (4 / 3.0) * M_PI * pow(radius, 3);
+}
+
+float coneVolume(float radius, float height){
+    return M_PI * pow(radius, 2) * (height / 3);
 }
