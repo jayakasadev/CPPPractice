@@ -12,7 +12,11 @@ add_executable(C__Practice ${SOURCE_FILES})
 
 # change this to the directory containing Eigen
 # this is a fix for clion 2017.1.3
-include_directories("C:/Tools/C++Libraries/Eigen3.3.4")
+## Windows path to Eigen
+# include_directories("C:/Tools/C++Libraries/Eigen3.3.4")
+
+## Ubuntu path to Eigen
+
 # include_directories(/usr/include /usr/include/opencv2 /usr/include/opencv)
 # link_directories(/usr/lib ${CMAKE_BINARY_DIR}/bin)
 # target_link_libraries(C__Practice opencv_core opencv_highgui opencv_imgproc)
